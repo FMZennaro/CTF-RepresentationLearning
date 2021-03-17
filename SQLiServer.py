@@ -2,12 +2,17 @@
 import numpy as np
 
 class mockSQLienv(object):
-    def __init__(self,htmlpages,verbose=False):
+    def __init__(self,htmlpages,actions=10,S0S1=None,S1S2=None,verbose=False):
         
+        self.nactions = actions
         self.htmlpages = htmlpages
         self.verbose = verbose
         
-        self.S0S1, self.S1S2 = np.random.choice(np.arange(10),2,replace=False)
+        if S0S1==None and S1S2==None:
+            self.S0S1, self.S1S2 = np.random.choice(np.arange(actions),2,replace=False)
+        else:
+            self.S0S1 = S0S1
+            self.S1S2 = S1S2
         
         self.state = 0
         self.termination = False
