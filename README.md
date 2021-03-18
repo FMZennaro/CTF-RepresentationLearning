@@ -7,6 +7,6 @@ Learning Representation for CTF
 - *VAERepresentation - Training:* trains and save a VAE (depends on a Tokenizer)
 - *VAERepresentation - Agent:* runs an agent on a mock simulation (depends on a Tokenizer, VAE)
 
-- *VAERepresentation - Seq2Seq:* trains and save a Seq2Seq (depends on a Tokenizer)
+- *Seq2SeqRepresentation - Training:* trains and save a Seq2Seq (depends on a Tokenizer)
 
 - *SQLiServer*: validates the mock simulation
