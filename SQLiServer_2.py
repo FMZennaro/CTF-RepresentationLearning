@@ -42,7 +42,7 @@ class mockSQLenv(object):
             return self.htmlpages[0],self.query_reward,self.termination,'Server response is 1'
         elif (action_number==self.setup[1]):
             if(self.verbose): print('Correct exploratory action for the escape. I return 2')
-            return self.htmlpages[0],self.query_reward,self.termination,'Server response is 2'
+            return self.htmlpages[3],self.query_reward,self.termination,'Server response is 2'
         elif (action_number==self.setup[2]):
             if(self.verbose): print('Flag captured. I return 3')
             self.termination = True
